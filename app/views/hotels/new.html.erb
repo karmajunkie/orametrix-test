@@ -1,0 +1,8 @@
+<%= simple_form_for(@hotel, :url => city_hotels_path(@hotel.city)) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :rate %>
+    <%= f.input :description %>
+    <%= f.input :address %>
+    <%= f.input :city_id, :collection => City.all %>
+    <%= f.button :submit, "Save Hotel" %>
+<% end %>

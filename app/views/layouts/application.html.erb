@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Traveljournal</title>
+  <%= stylesheet_link_tag 'application' %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- This is where the view starts -->
+<div id='flash'>
+  <% [:success, :error, :notice].each do |type| %>
+      <% if flash[type].present? %>
+          <div class='<%= type.to_s %>'><%= flash[type] %></div>
+      <% end %>
+  <% end %>
+</div>
+<%= yield %>
+<!-- This is where the view ends -->
+
+</body>
+</html>

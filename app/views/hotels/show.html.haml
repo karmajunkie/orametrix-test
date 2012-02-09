@@ -1,0 +1,8 @@
+%h1= display_title(@hotel)
+.hotel
+  .address= @hotel.address
+  .description= @hotel.description
+  .rate= "#{@hotel.rate} a night"
+  .actions
+    .edit= link_to "Edit", edit_city_hotel_path(@hotel.city, @hotel)
+    .delete= link_to "Delete", city_hotel_path(@hotel.city, @hotel), :method => :delete

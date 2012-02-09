@@ -1,4 +1,14 @@
 Traveljournal::Application.routes.draw do
+  resources :trips
+  #resources :hotels
+
+  resources :cities do
+    resources :hotels
+  end
+
+  root :to => "hotels#index"
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

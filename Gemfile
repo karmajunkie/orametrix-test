@@ -29,9 +29,13 @@ end
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+gem "launchy"
 gem "jquery-rails", ">= 1.0.3"
 gem "haml-rails", ">= 0.3.4"
 gem "rake", "0.9.2"
 gem "factory_girl_rails", ">= 1.0.0", :group => :test
 gem "factory_girl_generator", ">= 0.0.1", :group => [:development, :test]
 gem "rspec-rails", ">= 2.2.1", :group => [:development, :test]
+gem "capybara"
+gem "simple_form"
+gem "capistrano"

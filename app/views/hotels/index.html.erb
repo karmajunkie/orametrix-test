@@ -1,0 +1,6 @@
+<h1>Hotel list</h1>
+<ul>
+  <% @hotels.each do |hotel| %>
+  <li class='hotel'><%= link_to hotel.name, city_hotel_path( hotel.city, hotel) %></li>
+  <% end %>
+</ul>

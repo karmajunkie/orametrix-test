@@ -1,0 +1,6 @@
+name,description,city,star_rating,rate,address
+"Waldorf Astoria","New York's Finest","New York",5,300.0,"123 main"
+"Peabody","Close to Graceland","Memphis",4,250.0,"123 main"
+"Holiday Inn","Free breakfast!","Garland",3,50.0,"123 main"
+"Comfort Inn","Not a nice place",Garland,2,40.0,"123 main"
+"Motel 6","Zombies here",Garland,1,25.0,"123 main"

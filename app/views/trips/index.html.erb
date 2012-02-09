@@ -1,0 +1,6 @@
+<h1>Trips as of <%= formatted_current_date %></h1>
+<ul>
+  <% @trips.each do |trip| %>
+    <li><%= trip.name %> - <%= formatted_date(trip.date) %></li>
+  <% end %>
+</ul>
